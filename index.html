@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Atividade de Tarefas Js com Framework.</title>
+</head>
+<body>
+<div class="container">
+    <div class="card app">
+        <h1 class="center">Tarefas</h1>
+        <p class="center subtitulo">Bem-Vindo</p>
+
+        <ul class="center destaque">
+            <li>
+                <i class="small material-icons">event_note</i>
+                <span>Vamos organizar o seu dia!!</span>
+            </li>
+        </ul>
+
+        <div class="input-field">
+            <input type="text" id="campoTitulo" class="campoTitulo" />
+            <label for="campoTitulo">Título</label>
+        </div>
+
+        <div class="input-field">
+            <input type="text" id="campoObs" class="campoObs" />
+            <label for="campoObs">Observações</label>
+        </div>
+
+        <label for="campoPrioridade" class="label-prioridade">Prioridade</label>
+        <select id="campoPrioridade" class="browser-default">
+            <option value="Baixa">Baixa</option>
+            <option value="Média" selected>Média</option>
+            <option value="Alta">Alta</option>
+        </select>
+
+        <div class="area-botao">
+            <a id="botao" class="btn-floating btn-large waves-effect waves-light red">
+                <i class="material-icons">arrow_downward</i>
+            </a>
+            <span id="contador"></span>
+        </div>
+
+        <section class="tarefas">
+            <table class="highlight">
+                <thead>
+                    <tr>
+                        <th>Tarefa</th>
+                        <th>Observações</th>
+                        <th>Prioridade</th>
+                        <th class="centro">Concluir</th>
+                        <th class="centro">Apagar</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="js/jquery-3.5.1.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

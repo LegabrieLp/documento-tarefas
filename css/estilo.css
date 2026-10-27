@@ -1,0 +1,102 @@
+body {
+    background: #000000;
+    padding: 24px 0;
+}
+
+.container {
+    max-width: 1600px;
+    width: 94%;
+}
+
+.app {
+    padding: 24px 32px 32px;
+    border-radius: 12px;
+}
+
+.app h1 {
+    font-size: 3rem;
+    margin: 0 0 8px;
+}
+
+.subtitulo {
+    color: #777;
+    margin-top: 0;
+}
+
+.destaque {
+    margin-bottom: 24px;
+}
+
+.destaque li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+
+.label-prioridade {
+    display: block;
+    font-size: 0.8rem;
+    margin-top: 8px;
+}
+
+#campoPrioridade {
+    margin-bottom: 20px;
+}
+
+
+.area-botao {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+#contador {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+
+.tarefas {
+    margin-top: 32px;
+    overflow-x: auto;
+}
+
+.centro {
+    text-align: center;
+}
+
+.tarefas td.centro {
+    text-align: center;
+}
+
+.vazio {
+    text-align: center;
+    color: #999;
+    padding: 24px 0;
+}
+
+.prioridade {
+    padding: 3px 10px;
+    border-radius: 12px;
+    color: #020202;
+    font-size: 0.8rem;
+}
+
+tr.concluida td {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+tr.concluida .prioridade {
+    opacity: 0.5;
+}
+
+.botaoConcluir {
+    color: #030303;
+}
+
+.botaoDeletar {
+    color: #050505;
+}
